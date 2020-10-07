@@ -2,7 +2,6 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { useMeQuery } from "../generated/graphql";
 import styled from 'styled-components'
-import cookies from "js-cookie";
 
 const HomeContainer = styled.div`
   display: flex;
@@ -26,7 +25,7 @@ export const Home = () => {
     <HomeContainer>
       <h1>User Info</h1>
       <p>Email: {data.me?.email}</p>
-      <img src={data.me?.image} width={500} height={500} />
+      <img src={data.me?.image} width={500} height={500} alt={`${data.me?.email}'s uploaded picture`} />
     </HomeContainer>
   );
 };
