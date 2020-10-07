@@ -25,7 +25,7 @@ export const Home = () => {
     <HomeContainer>
       <h1>User Info</h1>
       <p>Email: {data.me?.email}</p>
-      <img src={data.me?.image} width={500} height={500} alt={`${data.me?.email}'s uploaded picture`} />
+      <img src={data.me?.image} width={500} height={500} alt={`uploaded by ${data.me?.email}`} />
     </HomeContainer>
   );
 };
