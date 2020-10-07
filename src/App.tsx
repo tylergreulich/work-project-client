@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 const LoadingWrapper = styled.div`
   width: 100%;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
