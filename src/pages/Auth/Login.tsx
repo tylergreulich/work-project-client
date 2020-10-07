@@ -39,13 +39,12 @@ export const Login: React.FC<RouteComponentProps> = ({ history }) => {
             }
           });
           
+          setLoading(false)
           console.log(response);
           
           if (response && response.data) {
-            setAccessToken(response.data.login.accessToken);
+            setAccessToken(response.data.login.accessToken!);
           }
-
-          setLoading(false)
           
           history.push("/");
         }}
