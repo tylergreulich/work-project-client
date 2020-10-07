@@ -8,13 +8,22 @@ const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const LoadingWrapper = styled.div`
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+`
+
 
 export const Home = () => {
   const { data } = useMeQuery({ fetchPolicy: "network-only" });
   const history = useHistory()
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <LoadingWrapper>Loading...</LoadingWrapper>;
   }
 
   if (!data.me) {
