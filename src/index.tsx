@@ -68,7 +68,7 @@ const client: any = new ApolloClient({
         }
       },
       fetchAccessToken: () => {
-        return fetch("https://work-project-server.herokuapp.com/graphql/refresh_token", {
+        return fetch("https://work-project-server.herokuapp.com/refresh_token", {
           method: "POST",
           credentials: "include"
         });

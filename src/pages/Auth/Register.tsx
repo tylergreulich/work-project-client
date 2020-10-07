@@ -23,6 +23,7 @@ const onDrop = useCallback((acceptedFiles: File[]) => {
 
   return (
     <FormContainer>
+      <h1>Please Register</h1>
       <MyForm
         onSubmit={async e => {
           e.preventDefault();
