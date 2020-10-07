@@ -6,7 +6,7 @@ export const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4000/refresh_token", {
+    fetch("https://work-project-server.herokuapp.com/graphql/refresh_token", {
       method: "POST",
       credentials: "include"
     }).then(async res => {
