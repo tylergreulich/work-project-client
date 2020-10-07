@@ -17,7 +17,7 @@ export const App = () => {
   }, []);
 
   if (loading) {
-    return <div>loading...</div>;
+    return <div>Loading...</div>;
   }
 
   return <Routes />;
