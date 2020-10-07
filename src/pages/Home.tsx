@@ -18,7 +18,7 @@ export const Home = () => {
   }
 
   if (!data.me) {
-    history.push('/login')
+    history.push('/register')
   }
 
   return (
