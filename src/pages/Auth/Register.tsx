@@ -60,6 +60,7 @@ const onDrop = useCallback((acceptedFiles: File[]) => {
             }}
             name="email"
             placeholder="Email"
+            type="email"
             />
         </InputContainer>
         <InputContainer>

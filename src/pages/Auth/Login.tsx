@@ -57,6 +57,7 @@ export const Login: React.FC<RouteComponentProps> = ({ history }) => {
               setEmail(e.target.value);
             }}
             placeholder="Email"
+            type="email"
             name="email"
           />
         </InputContainer>
